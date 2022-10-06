@@ -1,0 +1,121 @@
+.header_container{
+    margin: 0 2rem;
+    height: 390vh;
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container h3{
+    font-size: 50px;
+    color: #2192FF;
+    text-transform: uppercase;
+    max-width: 30rem;
+    margin-top: 9rem;
+    text-align: center;
+    margin-left: 6rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.container p{
+    font-size: 14px;
+    font-weight: lighter;
+    max-width: 30rem;
+    margin-left: 5rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 2.5rem;
+}
+.container_right{
+    margin-left: 12rem;
+}
+.header_image{
+    height: 600px;
+    width: 700px;
+    margin-top: 5rem;
+}
+.btn_class{
+    background-color: #FDFF00;
+    color: black;
+    padding: 1rem 1rem;
+    border: 1px solid #FDFF00;
+    text-decoration: none;
+    margin-left: 13rem;
+    transition: all 0.3 ease-in-out;
+}
+.btn_class:hover{
+    background-color: #2192FF;
+    color: white;
+    border: 1px solid #2192FF;
+    transform: scale(0.9s);
+}
+
+@media screen and (max-width:768px){
+    .header_container{
+        height: 950vh;
+    }
+    .container{
+       display: flex;
+       flex-direction: column;
+    }
+    .container h3{
+        margin-left: 15rem;
+    }
+    .container p{
+        max-width: 30rem;
+        margin-left: 15rem;
+    }
+    .btn_class{
+        margin-left: 27rem;
+        display: inline;
+    }
+    .header_image{
+        margin-left: 7rem;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .header_container{
+        height: 340vh;
+    }
+    .container_left{
+        margin: 0rem -7rem; 
+    }
+    .container_right{
+     margin: 3rem 3rem;
+    }
+    .container p{
+        margin-bottom: 3rem;
+        font-size: 20px;
+    }
+    .btn_class{
+        margin-left: 12rem;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .container{
+        gap: 4rem;
+        margin: 2rem 6rem;
+    }
+    .header_container{
+        height: 340vh;
+    }
+    .container p{
+        margin-bottom: 3rem;
+        font-size: 20px;
+    }
+    .btn_class{
+        margin-left: 12rem;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+    }
+}

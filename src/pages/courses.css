@@ -1,0 +1,164 @@
+.courses{
+    height: 630vh;
+    width: 100%;
+    margin-left: 4rem;
+}
+.courses h3{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: capitalize;
+    margin-right: 6rem;
+    margin-top: 4rem;
+    color: #2192ff;
+}
+.courses_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+    margin: 4rem 12rem;
+    margin-left: 3rem;
+}
+.courses_list h4{
+   font-size: 20px;
+   font-weight: bold;
+   color: #fdff00;
+   text-align: center;
+   margin-bottom: 0.5rem;
+}
+.courses_list span{
+    color: #fdff00;
+    margin-left: 9.5rem;
+    
+}
+.courses_list span i{
+    margin-right: 0.1rem;
+}
+.courses_name{
+    background-color: #2192ff;
+    padding: 2rem 1rem;
+    border-radius: 30px;
+}
+
+.courses_image{
+    height: 300px;
+    width: 300px;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.courses_list p{
+    font-size: 14px;
+    font-weight: lighter;
+    max-width: 22rem;
+    color: white;
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+.btn_courses{
+    background-color: #FDFF00;
+    color: black;
+    padding: 1rem 1rem;
+    border: 1px solid #FDFF00;
+    text-decoration: none;
+    margin-left: 9rem; 
+    transition: all 0.2s ease-in-out; 
+}
+.btn_courses:hover{
+    background-color: transparent;
+    color: #FDFF00;
+    border: 2px solid #FDFF00;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:768px) {
+    .courses_list{
+        display: flex;
+        flex-direction: column;
+        margin-left:10rem;
+        margin: 3rem 0rem;
+      padding: 3rem 0rem;
+    }
+    .courses_name{
+      margin: 3rem 0.5rem;
+      margin-left: 10rem;
+    }
+    .courses{
+        height: 990vh;
+        margin-left: 19rem;
+
+    }
+    .courses_name{
+        margin-left: 4rem;
+    }
+    .courses_image{
+        padding-right: 2rem;
+    }
+     .courses h3{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width:480px){
+  .courses_list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .courses_name{
+    margin: 0.5rem 0rem;
+  }
+  .courses{
+    height: 490vh;
+  }
+  .courses h4{
+    font-size: 30px;
+  }
+  .courses p{
+    margin-bottom: 3rem;
+  };
+  .courses span{
+    margin-left: 8.5rem;
+  }
+  .btn_courses{
+    margin-left: 6rem;
+    font-size: 1.5rem;
+  }
+  .courses h3{
+    margin-left: 12rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .courses_list{
+    margin-left: 13rem;
+  }
+  .courses{
+    height: 450vh;
+  }
+  .courses_name{
+  padding: 3rem 3rem;
+  }
+  .courses h4{
+    font-size: 30px;
+  }
+  .courses h3{
+    margin-left: 38rem;
+    font-size: 50px;
+  }
+  .courses p{
+    margin-bottom: 3rem;
+  };
+  .courses span{
+    margin-left: 5rem;
+  }
+  .btn_courses{
+    margin-left: 7rem;
+    font-size: 1.5rem;
+  }
+  .courses_image{
+    margin-right: 3rem;
+  }
+}

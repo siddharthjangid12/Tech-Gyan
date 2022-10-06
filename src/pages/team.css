@@ -1,0 +1,127 @@
+.team_member{
+    height: 110vh;
+    width: 100%;
+    margin: 4rem 4rem;
+    
+}
+
+.team{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.team_member h2{
+    margin-left: 3rem;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 7rem;
+    margin-top: 2rem;
+}
+
+.team_teacher{
+    height: 300px;
+    width: 320px;
+    margin-left: 4rem;
+    border: 2px solid #fdff00;
+}
+.team h4{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fdff00;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0.4rem;
+    margin-top: 0.5rem;
+}
+.team p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    color: white;
+}
+.team_list{
+    background-color: #2192ff;
+    padding: 2rem 4rem;
+    border-radius: 30px;
+    margin: 0rem 1rem;
+    gap: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .team{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .team_list{
+        padding: 2rem 0rem;
+        margin: 1rem 10rem;
+    }
+    .team_member h2{
+        margin-left: 7rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width:480px){
+    .team_list{
+        margin: 1rem 8rem;
+        padding: 3rem 9rem;
+    }
+    .team{
+        padding: 2rem -9rem;
+        margin: 3rem -38rem;
+        padding-left: 20rem;
+        
+    }
+    .team_member h2{
+        margin-left: 19rem;
+        font-size: 50px;
+    }
+    .team_member p{
+       margin-left: 4rem;
+       font-size: 25px;
+    }
+    .team_member h4{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .team_member p{
+        margin-left: 4rem;
+        font-size: 25px;
+     }
+     .team_member h4{
+         font-size: 30px;
+     }
+     .team{
+        margin-left: 7rem;
+    }
+    .team_list{
+        margin: 2rem 1rem;
+        padding: 3rem 1rem;
+    }
+    .team_teacher{
+        margin-right: 2rem;
+        height: 400px;
+        width: 450px;
+    }
+    .team_member p{
+        margin-left: 7rem;
+        font-size: 28px;
+        margin-top: 1rem;
+     }
+     .team_member h4{
+         font-size: 30px;
+     }
+     .team_member h2{
+        margin-left: 35rem;
+        font-size: 50px;
+        margin-top: 3rem;
+    }
+}

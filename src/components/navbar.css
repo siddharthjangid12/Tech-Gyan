@@ -1,0 +1,27 @@
+.nav_list{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-right: 6rem;
+}
+.nav_icon{
+    text-decoration: none; 
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+.nav_icon:hover{
+   color: #FDFF00;
+}
+
+@media screen and (max-width:768px){
+    .nav_icon{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .nav_icon{
+        font-size: 25px;
+    }
+}

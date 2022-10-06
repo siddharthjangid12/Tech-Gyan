@@ -1,0 +1,42 @@
+.main_logo{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2192FF;
+}
+.logo_name h4{
+    display: flex;
+    color: #FDFF00;
+    font-size: 30px;
+    gap: 0.5rem;
+    margin-left: 4rem;
+}
+.logo_name span{
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .main_logo{
+        width: 135%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .main_logo{
+        width: 270%;
+    }
+    .logo_name{
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .main_logo{
+        width: 165vh;
+    }
+    .logo_name h4{
+        font-size: 40px;
+    }
+}
